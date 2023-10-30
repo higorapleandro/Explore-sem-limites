@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+:root {
+    font-size: 62.5%;
+    --base-font: 'Mulish', sans-serif;
+  
+    /* Colors */
+    --white: #ffffff;
+    --light-gray: #f9f4fb;
+    --accent-color: #b52184;
+    --text-base-color: #312d64;
+    --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+body {
+    background: var(--light-gray);
+    font-family: var(--base-font);
+}
+
+#hero {
+    padding: 0 3.4rem 5.3rem 3.2rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  h1 {
+    color: var(--accent-color);
+    font-family: Mulish;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 4rem;
+    text-align: center;
+  }
+
+  .astronaut img {
+    width: 100%;
+    display: block;
+    margin: 0 auto 1.7rem 0;
+  }
+
+  
+.astronaut-header p {
+    color: var(--text-base-color);;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.astronaut-header a img{
+    border: 3px solid var(--accent-color);
+    border-radius: 3rem;
+    padding: 1rem 0.5rem;
+    display: block;
+    margin: 3.5rem auto;
+} 
+
+
+#main {
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-background);
+  padding: 5.3rem 3.9rem 5.5rem;
+  display: grid;
+  gap: 4.9rem;
+}
+
+.card {
+  
+  background: var(--white);
+  padding: 2.6rem;
+  border-radius: 2rem;;
+}
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  color: var(--accent-color);
+  font-family: Mulish;
+  font-size: 2.9219rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.card p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--text-base-color);
+    margin-top: 1.9rem;
+  
+}
+
+#cards .card .card-text {
+  width: 26.5rem;
+}
+
+#contact {
+  padding: 7.8rem 3.9rem 6.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+form h2 {
+  color: var(--accent-color);
+  font-family: Mulish;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: 4.2rem;
+}
+
+form .input-wrapper {
+  margin-bottom: 2.2rem;
+  
+}
+
+form .input-wrapper {
+  width: 100%;
+  border: 0.15rem solid var(--text-base-color);
+  border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem 1.6rem;
+  color: var(--text-base-color);
+  font-weight: 600;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+form .input-wrapper .input {
+  background-color: transparent;
+  width: 100%;
+}
+
+form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem 1.6rem;
+  color: var(--text-base-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+form .input-wrapper :focus-visible {
+  outline: none;
+}
+
+form textarea :focus-visible {
+  outline: none;
+}
+
+form textarea{
+  height: 12.6rem;
+  background-color: transparent;
+}
+
+form input::placeholder,  textarea::placeholder {
+  color: var(--text-base-color);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+
+button, input, fieldset {
+  border: none;
+  background: none;
+  font-family: var(--base-font);
+}
+
+form input::placeholder {
+  padding-left: 0.5rem;
+}
+
+
+
+#contact form button {
+  background: var(--gradient-background);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  padding: 1rem 1.6rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  filter: brightness(0.9);
+}
+
+
+
+footer {
+  background: var(--gradient-background);
+  padding: 3.2rem 1.6rem;
+}
+
+footer p {
+  color: var(--white);
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (min-width: 1080px) {
+
+  #hero {
+      display: flex;
+      padding: 0 2.9rem 10.3rem 10.9rem;
+      max-height: 83.6rem;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 5.8rem;
+      line-height: 7.3rem;
+      margin: 0 0 0.8rem;
+    }
+
+    #hero .astronaut-header p {
+      font-size: 3.2rem;
+      line-height: 4rem;
+      margin-bottom: 17.9rem;
+    }
+
+    #hero .astronaut {
+      order: 2;
+      
+    }
+
+    .astronaut-header {
+      order: 1;
+      margin-top: 32rem;
+    }
+ 
+    .astronaut-header {
+      order: 1;
+      margin-bottom: 0;
+    }
+    
+    #hero .astronaut-header img {
+      margin-left: 0;
+      margin-bottom: 0;
+      justify-self: flex-end;
+   
+    }
+
+    #main {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6rem;
+      padding: 6.4rem 11.1rem 8rem;
+    }
+
+    #contact {
+      display: flex;
+      align-items: center;
+      gap: 9.2rem;
+      padding: 0;
+      height: 62.2rem;
+      margin: 0 auto;
+      background: url(./assets/stars.svg);
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    #contact form {
+      flex: 1;
+      margin-left: 10.9rem;
+    }
+
+    #contact .stars {
+      flex: 1;
+    }
+
+}
